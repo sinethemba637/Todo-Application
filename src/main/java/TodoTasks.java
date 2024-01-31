@@ -18,7 +18,7 @@ public class TodoTasks implements TodoRepository {
     public void save(TodoItem todo) {
 
         if (todo != null) {
-            todo.setId(todoList.size()); //Added this line to set ids
+            todo.setId(todoList.size());
             todoList.add(todo);
         }
     }

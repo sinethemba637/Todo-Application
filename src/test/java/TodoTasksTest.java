@@ -19,7 +19,7 @@ public class TodoTasksTest {
         List<TodoItem> todoList = todoTasks.getTodoList();
         assertEquals(1, todoList.size());
         assertEquals(mockTodoItem, todoList.get(0));
-        assertEquals(0, mockTodoItem.getId()); // Assuming you start with id 0
+        assertEquals(0, mockTodoItem.getId());
     }
 
     @Test
@@ -28,7 +28,7 @@ public class TodoTasksTest {
         TodoTasks todoTasks = new TodoTasks();
         TodoItem updatedTodoItem = new TodoItem("implement code", "person4", "12/03/2024");
         todoTasks.save(updatedTodoItem);
-// Act
+        // Act
         todoTasks.update(1, updatedTodoItem);
 
         // Assert
